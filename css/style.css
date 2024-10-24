@@ -1,0 +1,812 @@
+html {
+  scroll-padding-block: 40px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*********** scroll up  ***************/
+.scroll-up {
+  display: inline-block;
+  position: fixed;
+  right: 20px;
+  top: 90%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**************  ******************/
+
+/************** start of Navbar ******************/
+
+.menu {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+
+nav {
+  background-color: rgb(26, 26, 26, 0.5);
+}
+.hover a {
+  color: #fff;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.drop ul li a {
+  color: #4e4e4e;
+}
+
+.drop ul a:hover {
+  color: #0d6efd;
+}
+
+.dropdown-item:active {
+  background-color: white;
+}
+
+
+.item-in ul {
+  visibility: hidden;
+  transition: all 1s;
+}
+
+
+.item-in:hover .item-out {
+  visibility: visible;
+  transition: all 1s;
+}
+
+.hover-drop {
+  position: relative;
+}
+
+.hover-drop .dropdown-menu {
+  visibility: hidden;
+  display: block;
+  transition: all 1s;
+  position: absolute;
+}
+
+.hover-drop:hover .dropdown-menu {
+  visibility: visible;
+}
+
+
+.item-out {
+  padding: 1.5rem 1rem;
+  position: absolute;
+  left: -100%;
+  background-color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.item-out li {
+  padding: 5px 0;
+  font-weight: 400;
+}
+
+.item-out a {
+  text-decoration: none;
+}
+
+.hover a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.hover a:hover::before {
+  width: 80%;
+}
+
+.active {
+  border-bottom: 2px solid white;
+  transition: all 0.4s ease-in-out;
+}
+
+/************** end of Navbar ******************/
+
+/************** start of Header sections ******************/
+
+header {
+  background-image: url(../images/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  z-index: 222;
+}
+
+header .layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.header-content h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+
+.header-content p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.animated::after {
+  content: "";
+  animation: typing 10s infinite ease-in-out;
+}
+
+/************** end of Header sections ******************/
+
+/************** start of Header sections ******************/
+
+header {
+  background-image: url(../images/Home.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  z-index: 222;
+}
+
+header .layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.header-content h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+
+.header-content p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.animated::after {
+  content: "";
+  animation: typing 10s infinite ease-in-out;
+}
+
+/************** end of Header sections ******************/
+
+/************** start of Services sections ******************/
+
+.heading h3 {
+  font-size: 3rem;
+}
+
+.heading p {
+  position: relative;
+}
+
+.heading p::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 50px;
+  height: 6px;
+  background-color: #0078ff;
+  transform: translate(-50%, -50%);
+}
+
+.box-services {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.box-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 10px #000000;
+  margin: auto;
+  transition: all 500ms ease;
+}
+
+.box-circle i {
+  font-size: 2.5rem;
+}
+
+.box-services:hover .box-circle {
+  color: #fff;
+  background-color: #000000;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/************** end of Services sections ******************/
+
+/************** start of Work sections ******************/
+
+.card,
+.card span {
+    border: 0;
+    font-size: 0.8rem;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #000000;
+    margin: auto;
+    position: relative;
+    top: 8px;
+    left: 19px;
+}
+
+.icon a {
+    position: absolute;
+    left: 4px;
+    top: -7px;
+}
+
+.icon i {
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+.card:hover img {
+    transform: scale(1.3);
+}
+
+.card img {
+    transition: all 1s;
+}
+
+/************** end of Work sections ******************/
+
+#contact {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 4rem;
+
+}
+
+#contact .heading {
+  position: relative;
+}
+
+#contact .heading::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  transform: translate(-50%, -50%);
+}
+
+#contact .box {
+  margin: 6rem 0 3rem;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  padding: .625rem .9375rem;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #000000;
+}
+
+textarea {
+  height: 9.375rem;
+}
+
+#contact {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#contact button {
+  transition: all 0.4s;
+}
+
+#contact button:hover {
+  background-color: #4e4e4e;
+  box-shadow: 0 0 0 4px #cde1f8;
+}
+
+.social a {
+  color:  #0078ff;
+}
+
+.circle-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #000000;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.circle-icon:hover {
+  background-color: #0078ff;
+  color: white;
+  box-shadow: 0 0 0 3px #cde1f8;
+}
+
+
+/************** end of Contact sections ******************/
+
+
+/************** start of Footer sections ******************/
+
+.footer {
+  background-image: url(../images/textured-metal-background.jpg);
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/************** end of Footer sections ******************/
+
+
+/************** start of Animations ******************/
+
+@keyframes typing {
+  0% {
+      content: " |";
+  }
+
+  1% {
+      content: "D |";
+  }
+
+  2% {
+      content: "De |";
+  }
+
+  3% {
+      content: "Des |";
+  }
+
+  4% {
+      content: "Desi |";
+  }
+
+  5% {
+      content: "Desig |";
+  }
+
+  6% {
+      content: "Design |";
+  }
+
+  7% {
+      content: "Designe |";
+  }
+
+  8% {
+      content: "Designer |";
+  }
+
+  9% {
+      content: "Designer |";
+  }
+
+  10% {
+      content: "Designer |";
+  }
+
+  11% {
+      content: "Designe |";
+  }
+
+  12% {
+      content: "Design |";
+  }
+
+  13% {
+      content: "Desig |";
+  }
+
+  14% {
+      content: "Desi |";
+  }
+
+  15% {
+      content: "Des |";
+  }
+
+  16% {
+      content: "De |";
+  }
+
+  17% {
+      content: "De |";
+  }
+
+  18% {
+      content: "Dev |";
+  }
+
+  19% {
+      content: "Deve |";
+  }
+
+  20% {
+      content: "Devel |";
+  }
+
+  21% {
+      content: "Develo |";
+  }
+
+  22% {
+      content: "Develop |";
+  }
+
+  23% {
+      content: "Develope |";
+  }
+
+  24% {
+      content: "Developer |";
+  }
+
+  25% {
+      content: "Developer |";
+  }
+
+  26% {
+      content: "Developer |";
+  }
+
+  27% {
+      content: "Develope |";
+  }
+
+  28% {
+      content: "Develop |";
+  }
+
+  29% {
+      content: "Develo |";
+  }
+
+  30% {
+      content: "Devel |";
+  }
+
+  31% {
+      content: "Deve |";
+  }
+
+  32% {
+      content: "Dev |";
+  }
+
+  33% {
+      content: "De |";
+  }
+
+  34% {
+      content: "D |";
+  }
+
+  35% {
+      content: " |";
+  }
+
+  36% {
+      content: " |";
+  }
+
+  37% {
+      content: " |";
+  }
+
+  38% {
+      content: "F |";
+  }
+
+  39% {
+      content: "Fr |";
+  }
+
+  40% {
+      content: "Fre |";
+  }
+
+  41% {
+      content: "Free |";
+  }
+
+  42% {
+      content: "Freel |";
+  }
+
+  43% {
+      content: "Freela |";
+  }
+
+  44% {
+      content: "Freelan |";
+  }
+
+  45% {
+      content: "Freelanc |";
+  }
+
+  46% {
+      content: "Freelance |";
+  }
+
+  47% {
+      content: "Freelancer |";
+  }
+
+  48% {
+      content: "Freelancer |";
+  }
+
+  49% {
+      content: "Freelancer |";
+  }
+
+  50% {
+      content: "Freelance |";
+  }
+
+  51% {
+      content: "Freelance |";
+  }
+
+  52% {
+      content: "Freelan |";
+  }
+
+  53% {
+      content: "Freela |";
+  }
+
+  54% {
+      content: "Freel |";
+  }
+
+  55% {
+      content: "Free |";
+  }
+
+  56% {
+      content: "Fre |";
+  }
+
+  57% {
+      content: "Fr |";
+  }
+
+  58% {
+      content: "F |";
+  }
+
+  59% {
+      content: " |";
+  }
+
+  60% {
+      content: " |";
+  }
+
+  61% {
+      content: " |";
+  }
+
+  62% {
+      content: " |";
+  }
+
+  63% {
+      content: " |";
+  }
+
+  64% {
+      content: "F |";
+  }
+
+  65% {
+      content: "Fr |";
+  }
+
+  66% {
+      content: "Fro |";
+  }
+
+  67% {
+      content: "Front |";
+  }
+
+  68% {
+      content: "Front  |";
+  }
+
+  69% {
+      content: "Front |";
+  }
+
+  70% {
+      content: "Front |";
+  }
+
+  71% {
+      content: "Front E |";
+  }
+
+  72% {
+      content: "Front En |";
+  }
+
+  73% {
+      content: "Front End |";
+  }
+
+  74% {
+      content: "Front End De |";
+  }
+
+  75% {
+      content: "Front End Dev |";
+  }
+
+  76% {
+      content: "Front End Deve |";
+  }
+
+  77% {
+      content: "Front End Devel |";
+  }
+
+  78% {
+      content: "Front End Develo |";
+  }
+
+  79% {
+      content: "Front End Develop |";
+  }
+
+  80% {
+      content: "Front End Developer |";
+  }
+
+  81% {
+      content: "Front End |";
+  }
+
+  82% {
+      content: " |";
+  }
+
+  83% {
+      content: "Front End |";
+  }
+
+  84% {
+      content: "Front End |";
+  }
+
+  85% {
+      content: "Front En";
+  }
+
+  86% {
+      content: "Front E |";
+  }
+
+  87% {
+      content: "Front |";
+  }
+
+  88% {
+      content: "Fr |";
+  }
+
+  89% {
+      content: "F |";
+  }
+
+  90% {
+      content: " |";
+  }
+
+  91% {
+      content: " |";
+  }
+
+  92% {
+      content: " |";
+  }
+
+  93% {
+      content: " |";
+  }
+
+  94% {
+      content: " |";
+  }
+
+  95% {
+      content: " |";
+  }
+
+  96% {
+      content: " |";
+  }
+
+  97% {
+      content: " |";
+  }
+
+  98% {
+      content: " |";
+  }
+
+  99% {
+      content: " |";
+  }
+
+  100% {
+      content: " |";
+  }
+}
+
+/************** end of Animations ******************/
+
+#services img{
+  width: 100%;
+  
+}
+.homey h1{
+  display: flex;
+}

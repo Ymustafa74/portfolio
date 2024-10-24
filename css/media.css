@@ -1,0 +1,49 @@
+@media screen and (max-width:768px) {
+  nav {
+      background-color: rgb(26, 26, 26, 0.5);
+  }
+
+  .header-content h1 {
+      font-size: 3rem;
+  }
+
+  .active {
+      border-bottom: 0;
+  }
+
+  .hover a:hover::before {
+      width: 0%;
+
+  }
+
+  .hover a:hover {
+      color: #0078ff;
+  }
+
+  .navbar-nav .nav-link.active {
+      color: #0078ff;
+  }
+
+  .icon a {
+      top: 0;
+  }
+
+  .carousel-item p {
+      max-width: 100%;
+  }
+
+  #contact .container .row-box {
+      padding-inline: .75rem;
+  }
+
+#about{
+  img{
+    width: 100%;
+  }
+}
+
+  #contact .box {
+      padding: 3rem 1rem;
+  }
+
+}
